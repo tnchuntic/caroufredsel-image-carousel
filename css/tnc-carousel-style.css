@@ -1,0 +1,145 @@
+/* 
+    Created on : 16/10/2014, 4:17:41 PM
+    Author     : thomaschuntic
+*/
+
+/* CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+    height: auto;
+    width:100%; 
+    text-align: center;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+
+.carousel .item {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    min-height: 880px;
+    background-color: #999;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    -webkit-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -ms-transition: opacity 2s;
+    -o-transition: opacity 2s;
+    transition: opacity 2s;
+}
+
+.carousel .item .img-block{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.carousel .active.left, .carousel .active.right {
+    left:0;
+    opacity:0;
+    z-index:2;
+}
+.carousel .next, .carousel .prev {
+    left:0;
+    opacity:1;
+    z-index:1;
+}
+
+
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+}
+.carousel-control{
+    width: 8%;
+}
+.carousel .left > .fa,
+.carousel .right > .fa{
+    font-size: 1.5em;
+    position: absolute;
+    top: 50% !important;
+    z-index: 5;
+    display: inline-block;
+}
+
+.carousel .left > .fa{ left: 20%; }
+.carousel .right > .fa{ right: 20%;}
+
+.carousel-control.left,
+.carousel-control.right{
+    background-image: none;
+    z-index: 9;
+}
+
+/*.generic-caption{
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+    padding: 45px;
+    color: #fff;
+    text-align: left;
+    background-color: rgba(0,0,0,0.5);
+    border-top-left-radius: 50px;
+    font-size: 16px;
+}*/
+
+.generic-caption h4{
+    font-size: 2.5em;
+}
+.generic-caption p{
+    font-size: 1.5em;
+}
+
+.carousel-inner .item .container{ 
+    position: relative;
+    height: 100%;
+}
+.carousel-inner .item .carousel-link p{
+    margin: 0;
+}
+
+/*.carousel-inner .item .carousel-link{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.5);
+    padding: 10px 40px;
+    font-size: 1.8em;
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px){
+    .generic-caption{
+        padding: 25px;
+    }
+    .generic-caption h4{
+        font-size: 1.5em;
+    }
+    .carousel-inner .item .carousel-link{
+        position: relative;
+        margin-top: 13%;
+        font-size: 120%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .generic-caption { 
+        display: none;
+    }
+    .carousel-inner .item .carousel-link{
+        margin-top: 70%;
+    }
+}*/
