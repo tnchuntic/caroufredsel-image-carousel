@@ -20,23 +20,23 @@ function tnc_carousel_integrateWithVC() {
     
 //    echo '<pre>'.print_r($arr_pages,true).'</pre>';
    vc_map( array(
-      "name" => __( "TNC Carousel", "mediafox" ),
+      "name" => __( "TNC Carousel", "tncweb" ),
       "base" => "tnc_carousel",
       "class" => "",
-       "icon" => "icon-mf-page",
-      "category" => __( "Mediafox", "mediafox"),
-      "description" => __("This will display carousel content", "mediafox"),
+       "icon" => "icon-tnc-page",
+      "category" => __( "tncweb", "tncweb"),
+      "description" => __("This will display carousel content", "tncweb"),
 //      'admin_enqueue_js' => array(get_template_directory_uri().'/vc_extend/bartag.js'),
       'admin_enqueue_css' => array('/css/tnc-carousel-style.css'),
       "params" => array(
          array(
             "type" => "dropdown",
             "class" => "",
-            "heading" => __( "Carousel", "mediafox" ),
+            "heading" => __( "Carousel", "tncweb" ),
             "param_name" => "tnc_carousel",
              'admin_label' => true,
             "value" => $arr_pages,
-            "description" => __( "Choose carousel to display", "mediafox" )
+            "description" => __( "Choose carousel to display", "tncweb" )
          )
       )
    ) );

@@ -8,8 +8,8 @@ class TNC_Carousel extends WP_Widget {
     public function __construct() {
         parent::__construct(
                 'tnc_carousel', // Base ID
-                __('Carousel', 'mediafox'), // Name
-                array('description' => __('Add Carousel Slider to your dynamic sidebar.', 'mediafox'),) // Args
+                __('Carousel', 'tncweb'), // Name
+                array('description' => __('Add Carousel Slider to your dynamic sidebar.', 'tncweb'),) // Args
         );
     }
 
